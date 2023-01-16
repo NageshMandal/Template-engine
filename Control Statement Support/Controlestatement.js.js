@@ -28,7 +28,13 @@
   },
 ];
 
+let entities = {
+  quote : "	&quot",
+  ampersand : "&amp"
+}
+
 let template = `<.html>
+                  <header> 'quote' <header/>
                   {%if  ($user.data == 1) %} 
                             <p> data 1   {{ $user.data }}!</p>
                   {%elseif ($user.data == 2)  %}
@@ -159,7 +165,11 @@ function templateEngine(template, data) {
       //   endData += answer;
       //   i = pointer + 2;
       // }
-    } else {
+    }
+    else if (template[i] == "'"){
+
+    }
+    else {
       endData += template[i++];
     }
   }
