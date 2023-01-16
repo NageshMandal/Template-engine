@@ -115,11 +115,15 @@ async function includesHandler(includes, data) {
     let loc = res[1].replaceAll('"', "");
     let file;
     // node js
-    if (window === undefined) {
+    if (typeof window === "undefined") {
+      console.log("node js");
       file = (await import(loc))["header"];
     } else {
+
+
     }
     // vannila js
+    console.log(file);
 
     endData = await templateEngine(file, data);
 
