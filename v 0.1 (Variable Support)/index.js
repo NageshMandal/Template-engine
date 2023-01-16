@@ -1,7 +1,8 @@
-let template = `<.html><h2>{{ $name  }}</h2><./html>`;
+let template = `<.html><h2>{{ $name }}</h2><./html>`;
 
 let data = {
   name: "Brajesh Mishra",
+  age : 22
 };
 
 // O(n) complexity

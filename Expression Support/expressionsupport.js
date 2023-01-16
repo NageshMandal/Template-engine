@@ -1,6 +1,6 @@
 let template = `<.html>
                   <h2>{{ $name  }}</h2>
-                  <p>{{ $quantity * $price }}</p>
+                  <p>{{ $quantity * $price }</p>
                   <p>{{ $quantity + $price }}</p>
                   <p>{{ $quantity - $price }}</p>
                   <p>{{ $quantity / $price }}</p>
